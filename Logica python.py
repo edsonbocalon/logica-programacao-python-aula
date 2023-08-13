@@ -1,7 +1,5 @@
 1+1
 
-2
-
 "Edson"
 
 'Edson'
@@ -49,7 +47,7 @@ saudacao_com_parametros(nome)
 
 # Condicional
 
-idade = 10
+idade = 20
 
 def verifica_se_pode_dirigir(idade):
   if idade >= 18:
@@ -58,3 +56,25 @@ def verifica_se_pode_dirigir(idade):
     print('Não tem permissão para dirigir')
 
 verifica_se_pode_dirigir(idade)
+
+def verifica_se_pode_dirigir_sem_parametros():
+ idade = input('Qual sua idade? ')
+ idade = int(idade)
+ if idade >= 18:
+  print('Tem permisssão para dirigir')
+ else:
+  print('Não tem permissão para dirigir')
+
+verifica_se_pode_dirigir_sem_parametros()
+
+Convertendo tipo para inteiro
+
+def verifica_se_pode_dirigir_sem_parametros():
+ idade = input('Qual sua idade? ')
+ idade = int(idade)
+ if idade >= 18:
+  print('Tem permisssão para dirigir')
+ else:
+  print('Não tem permissão para dirigir')
+
+verifica_se_pode_dirigir_sem_parametros()
