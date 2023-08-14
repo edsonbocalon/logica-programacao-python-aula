@@ -78,3 +78,32 @@ def verifica_se_pode_dirigir_sem_parametros():
   print('Não tem permissão para dirigir')
 
 verifica_se_pode_dirigir_sem_parametros()
+
+Lista
+
+idade = 22
+idade
+
+type(idade)
+
+nome = 'Edson'
+type(nome)
+
+idades = [18, 22, 15, 50]
+type(idades)
+
+idades[2]
+
+idades = [18, 22, 15, 50]
+#          0   1   2   3
+#          0  -3  -2  -1
+
+idades[1]
+
+idades[0 : 3]
+
+idades[1 : ]
+
+idades[-1]
+
+idades [-2]
