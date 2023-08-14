@@ -107,3 +107,55 @@ idades[1 : ]
 idades[-1]
 
 idades [-2]
+
+Laços e loops
+
+idades
+
+# for fora da função
+
+def verifica_se_pode_dirigir(idade):
+  if idade >= 18:
+    print(f'{idade} anos de idade, TEM permissão para dirigir')
+  else:
+    print(f'{idade} anos de idade, NÃO TEM permissão para dirigir')
+
+for idade in idades:
+  verifica_se_pode_dirigir(idade)
+
+def verifica_se_pode_dirigir(idades):
+  for idade in idades:
+    if idade >= 18:
+      print(f'{idade} anos de idade, TEM permissão para dirigir')
+    else:
+      print(f'{idade} anos de idade, NÃO TEM permissão para dirigir')
+
+verifica_se_pode_dirigir(idades)
+
+Boleano
+
+idade = 18
+idade >= 18
+
+idade = 15
+idade >= 18
+
+permissoes = []
+idades = [20, 14, 40]
+
+def verifica_se_pode_dirigir(idades, permissoes):
+  for idade in idades:
+    if idade >= 18:
+      permissoes.append(True)
+    else:
+      permissoes.append(False)
+
+verifica_se_pode_dirigir(idades, permissoes)
+
+permissoes
+
+for permissao in permissoes:
+  if permissao == True:
+    print('Tem permissão para dirigir')
+  else:
+    print('Não tem permissão para dirigir')
