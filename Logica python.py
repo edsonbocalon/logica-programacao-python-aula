@@ -67,7 +67,7 @@ def verifica_se_pode_dirigir_sem_parametros():
 
 verifica_se_pode_dirigir_sem_parametros()
 
-Convertendo tipo para inteiro
+# Convertendo tipo para inteiro
 
 def verifica_se_pode_dirigir_sem_parametros():
  idade = input('Qual sua idade? ')
@@ -108,7 +108,7 @@ idades[-1]
 
 idades [-2]
 
-Laços e loops
+# Laços e loops
 
 idades
 
@@ -132,7 +132,7 @@ def verifica_se_pode_dirigir(idades):
 
 verifica_se_pode_dirigir(idades)
 
-Boleano
+# Boleano
 
 idade = 18
 idade >= 18
@@ -159,3 +159,39 @@ for permissao in permissoes:
     print('Tem permissão para dirigir')
   else:
     print('Não tem permissão para dirigir')
+
+# Tipos em uma lista
+
+lista = ['Edson', 37, True, '18']
+
+for elemento in lista:
+  print(f'O elemento {elemento} é do tipo: ', type(elemento))
+
+# Import
+
+from random import randrange, seed
+seed(10)
+
+randrange (0, 11)
+
+notas_matematica = []
+for notas in range(8):
+  notas_matematica.append(randrange(0, 11))
+notas_matematica
+
+len (notas_matematica)
+
+# Matplotlib
+
+import matplotlib.pyplot as plt
+
+x = list(range(1, 9))
+y = notas_matematica
+plt.plot(x, y, marker='o')
+plt.title('Notas de matemática')
+plt.xlabel('Provas')
+plt.ylabel('Notas')
+plt.show()
+
+notas_matematica
+
